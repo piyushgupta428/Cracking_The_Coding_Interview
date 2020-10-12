@@ -5,6 +5,7 @@ var isvalidBST = function(root, min=Number.MIN_VALUE , max = Number.MAX_VALUE){
 if(!root){return true;}
 if(root.val <= min || root.val >= max){return false;}
 return isvalidBST(root.left, min, root.val) && isvalidBST(root.right, root.val, max);
+
 }
 
 
